@@ -24,7 +24,7 @@ public class Main extends JFrame {
         GameState gstate = new GameState();
         panel.setLayout(glayout);
         for(int i=1;i<10;i++) {
-            JButton button = new JButton(""+i);
+            GameButton button = new GameButton(i);
             panel.add(button);
             button.addActionListener(new ClickListener(gstate,button));
 
